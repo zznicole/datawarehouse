@@ -1,0 +1,9 @@
+@import 'colors';
+@import 'font';
+@import 'config';
+
+header {
+    width: 100%;
+    max-height: 100vh;
+    background-image: linear-gradient(#F6FAFD, #FFFFFF,);
+}
