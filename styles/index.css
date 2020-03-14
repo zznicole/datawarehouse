@@ -53,12 +53,43 @@ header {
   transform: scale(1.1);
 }
 .nav__button {
-  min-width: 210px;
+  width: 210px;
   height: 60px;
-  border-radius: 30px;
+  border-radius: 50px;
   align-self: flex-end;
+  border: 0px;
   background-color: #ffffff;
-  box-shadow: 3px 6px 3px lightgray;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__button--content {
+  width: 152px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__button--content--text {
+  text-decoration: none;
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.005em;
+  color: #212353;
+}
+.nav__button--content--text:hover {
+  color: #ffffff;
+}
+.nav__button--content--rightarrow {
+  width: 20px;
+  height: 14px;
+}
+.nav__button:hover {
+  background-color: grey;
 }
 
 /*# sourceMappingURL=index.css.map */
