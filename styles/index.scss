@@ -7,3 +7,60 @@ header {
     max-height: 100vh;
     background-image: linear-gradient(#F6FAFD, #FFFFFF,);
 }
+
+.navwrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    width: 1120px;
+    height: 60px;
+    margin-top: 50px; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__logo {
+        min-width: 49px;
+        min-height: 35px;
+    }
+
+    &__list {
+        width: 322px;
+        height: 30px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    
+        &--link {
+            text-decoration: none;
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #4B5D68;
+
+            &:hover {
+                font-style: bold;
+                font-weight: 600;
+                font-size: 17px;
+                color: #000;
+                transform: scale(1.1) ;
+            }
+        }
+    }
+
+    &__button {
+        min-width: 210px;
+        height: 60px;
+        border-radius: 30px;
+        align-self: flex-end;
+        background-color: #ffffff;
+        box-shadow: 3px 6px 3px lightgray;
+
+    }
+}
