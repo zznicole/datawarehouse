@@ -10,9 +10,10 @@ header {
 
 .navwrapper {
     width: 100%;
-    height: 100vh;
+    height: 110px;
     display: flex;
     justify-content: center;
+   
 }
 
 .nav {
@@ -95,10 +96,89 @@ header {
         }
 
         &:hover {
-            background-color: grey;
+            background-color: $secondary-botton-color;
         }    
-
     }
 }
+
+.headlinewrapper {
+    width: 100%;
+    height: 724px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.headline {
+    width: 1290px;
+    height: 464px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__h1 {
+        width: 645px;
+        height: 184px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 1.1;
+        display: flex;
+        align-items: center;
+        color: #212353;
+    }
+
+    &__content {
+        width: 380px;
+        height: 120px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #4B5D68;
+    }
+
+    &__button {
+        width: 170px;
+        height: 60px;
+        background-color: $primary-botton-color;
+        border-radius: 50px;
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: center;
+        color: #FFFFFF;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: $secondary-botton-color;
+        }
+    }
+
+    &__image {
+        width: 885px;
+        height: 468px;
+        position: absolute;
+        right: 5px;
+        top: 110px;
+    }
+}
+       
+        
+
+
+
+
+
+
+
+    
 
         
