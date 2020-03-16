@@ -328,6 +328,11 @@ header {
   color: #F063B8;
   padding: 1px;
 }
+.section3__container--card--card2 {
+  background-image: url("../images/background31.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 .section3__container--card--image {
   width: 232px;
   height: 211px;

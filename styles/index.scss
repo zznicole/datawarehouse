@@ -353,18 +353,47 @@ header {
                             padding: 1px;
                         }
                     }
+
+                    &--image {
+                        width: 232px;
+                        height: 211px;
+                        position: absolute;
+                        left: -60px;
+                    }
                 }
             }
-
-            &--image {
-                width: 232px;
-                height: 211px;
-                position: absolute;
-                left: -60px;
-            }
         }
+   
+        &--card1 {
+            background-image: url("../images/background31.png");
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+
+        &--card2 {
+            background-image: url("../images/background32.png");
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+
+        &--card3 {
+            background-image: url("../images/background33.png");
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+
+        &--card4 {
+            background-image: url("../images/background34.png");
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+
+            
+                
+            
     }
 }
+
 
 
     
