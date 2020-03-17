@@ -249,6 +249,7 @@ header {
         flex-direction: column;
         justify-content: space-between; 
         align-items: center;
+        margin-bottom: 50px;
 
         &--h4 {
             width: 205px;
@@ -282,6 +283,7 @@ header {
         height: 766px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
 
         &--card {
             width: 531.29px;
@@ -448,7 +450,6 @@ header {
         &--personalinfo {
             width: 385px;
             height: 200px;
-            
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -637,8 +638,104 @@ header {
                 color: $primary-font-color;
             }
         }
+
+        &--address {
+            width: 253px;
+            height: 65px;
+            margin-bottom: -50px;
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.8;
+            letter-spacing: 0.01em;
+            color: $primary-font-color;
+        }
+
+        &--contact {
+            width: 200px;
+            height: 60px;
+            margin-top: -50px;
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 1.8;
+            letter-spacing: 0.01em;
+            color: $primary-font-color;
+        }
+
+        &--copyright {
+            width: 310px;
+            height: 50px;
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 1.8;
+            letter-spacing: 0.01em;
+            color: $primary-font-color;
+        }
+    }
+
+    &__aboutandhelp {
+        width: 83px;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+
+        &--title {
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 1.6;
+            color: $primary-font-color;
+        }
+
+        &--content {
+            width: 83px;
+            height: 166px;
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 2.5;
+            color: $primary-font-color;
+        }
+
+    }
+
+    &__sm {
+        width: 178px;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &--title {
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 1.6;
+            color: $primary-font-color;
+        }
+
+        &--content {
+            width: 178px;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
+
+
+
+
 
 
 

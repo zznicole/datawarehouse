@@ -6,7 +6,7 @@
 
 header {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-image: linear-gradient(#F6FAFD, #FFFFFF);
 }
 
@@ -231,6 +231,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 }
 .section3__title--h4 {
   width: 205px;
@@ -261,6 +262,7 @@ header {
   height: 766px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .section3__container--card {
   width: 531.29px;
@@ -536,6 +538,129 @@ header {
 }
 .section5__button--2--text:hover {
   color: #ffffff;
+}
+
+.footerwrapper {
+  width: 100%;
+  height: 499px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  width: 1117px;
+  height: 408px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__company {
+  width: 335px;
+  height: 408px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__company--identification {
+  width: 222px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__company--identification--logo {
+  width: 49px;
+  height: 35px;
+}
+.footer__company--identification--name {
+  width: 153px;
+  height: 30px;
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #212353;
+}
+.footer__company--address {
+  width: 253px;
+  height: 65px;
+  margin-bottom: -50px;
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  color: #212353;
+}
+.footer__company--contact {
+  width: 200px;
+  height: 60px;
+  margin-top: -50px;
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  color: #212353;
+}
+.footer__company--copyright {
+  width: 310px;
+  height: 50px;
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  color: #212353;
+}
+.footer__aboutandhelp {
+  width: 83px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__aboutandhelp--title {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #212353;
+}
+.footer__aboutandhelp--content {
+  width: 83px;
+  height: 166px;
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 2.5;
+  color: #212353;
+}
+.footer__sm {
+  width: 178px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__sm--title {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #212353;
+}
+.footer__sm--content {
+  width: 178px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=index.css.map */
