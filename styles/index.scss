@@ -5,7 +5,7 @@
 
 header {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-image: linear-gradient(#F6FAFD, #FFFFFF,);
 }
 
@@ -593,7 +593,52 @@ header {
         }
     }
 }
-          
+
+.footerwrapper {
+    width: 100%;
+    height: 499px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    width: 1117px;
+    height: 408px;
+    display: flex;
+    justify-content: space-between;
+
+    &__company {
+        width: 335px;
+        height: 408px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &--identification {
+            width: 222px;
+            height: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &--logo {
+                width: 49px;
+                height: 35px;
+            }
+
+            &--name {
+                width: 153px;
+                height: 30px;
+                font-family: $font-family;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 20px;
+                line-height: 1.6;
+                color: $primary-font-color;
+            }
+        }
+    }
+}
 
 
 
