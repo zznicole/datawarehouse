@@ -2,9 +2,10 @@
 @import 'font';
 @import 'config';
 
+
 header {
     width: 100%;
-    max-height: 100vh;
+    height: 100vh;
     background-image: linear-gradient(#F6FAFD, #FFFFFF,);
 }
 
@@ -279,7 +280,6 @@ header {
     &__container {
         width: 1137.28px;
         height: 766px;
-        position: relative;
         display: flex;
         flex-wrap: wrap;
 
@@ -287,9 +287,7 @@ header {
             width: 531.29px;
             height: 358px;
             padding-top: 30px;
-            background-image: url("../images/background31.png");
-            background-repeat: no-repeat;
-            background-position: bottom;
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
@@ -353,14 +351,21 @@ header {
                             padding: 1px;
                         }
                     }
-
-                    &--image {
-                        width: 232px;
-                        height: 211px;
-                        position: absolute;
-                        left: -60px;
-                    }
                 }
+            }
+
+            &--image {
+                width: 232px;
+                height: 211px;
+                position: absolute;
+                left: -60px;
+            }
+                
+            &--image2 {
+                width: 232px;
+                height: 211px;
+                position: absolute;
+                right: -60px;
             }
         }
    
@@ -387,12 +392,208 @@ header {
             background-repeat: no-repeat;
             background-position: bottom;
         }
-
-            
-                
-            
     }
 }
+
+.section4wrapper {
+    width: 100%;
+    height: 1009px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 {
+    width: 1118px;
+    height: 709px;
+    background: $primary-botton-color;
+    border-radius: 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__title {
+        width: 405px;       
+        height: 52px;  
+        align-self: flex-start; 
+        margin-left: 43px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 1.3;
+        color: #FFFFFF;
+    }
+
+    &__card {
+        width: 645px;
+        height: 330px;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+        border-radius: 20px;
+        padding: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+
+        &--photo {
+            width: 90px;
+            height: 90px;
+            align-self: flex-start;
+        }
+        
+        &--personalinfo {
+            width: 385px;
+            height: 200px;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &--name {
+                font-family: $font-family;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 1.6;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.005em;
+                color: $primary-font-color;
+            }
+
+            &--title {
+                font-family: Avenir;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1.6;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.01em;
+                color: $primary-botton-color;
+            }
+
+            &--detail {
+                width: 385px;
+                height: 130px;
+                font-family: Avenir;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 1.8;
+                color: #4B5D68;
+            }
+        }
+    }
+}           
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: $primary-botton-color;
+    opacity: 0.2;
+}
+    
+.section5wrapper {
+    width: 100%;
+    height: 301px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section5 {
+    width: 1117px;
+    height: 101px;
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+        width: 584px;
+        height: 101px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &--h4 {
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 1.3;
+            color: $primary-font-color;
+        }
+
+        &--h6 {
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.6;
+            color: $secondary-font-color;
+        }
+    }
+
+    &__button {
+        width: 410px;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+
+        &--1 {
+            width: 170px;
+            height: 60px;
+            background: $secondary-botton-color;
+            border-radius: 50px;
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            color: #FFFFFF;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: $primary-botton-color;
+            }
+        }
+
+        &--2 {
+            width: 210px;
+            height: 60px;
+            background: #FFFFFF;
+            box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+            border-radius: 50px;
+            display: flex;
+            justify-content: space-evenly;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: $secondary-botton-color; 
+            }
+
+            &--text {
+                font-family: $font-family;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 1.6;
+                letter-spacing: 0.005em;
+                color: $primary-font-color;
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+          
 
 
 
