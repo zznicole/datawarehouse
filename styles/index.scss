@@ -2,6 +2,10 @@
 @import 'font';
 @import 'config';
 
+body {
+    width: 100%;
+    min-height: 100vh;
+}
 
 header {
     width: 100%;
@@ -36,6 +40,7 @@ header {
         list-style-type: none;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     
         &--link {
             text-decoration: none;
@@ -109,6 +114,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .headline {
@@ -169,8 +175,9 @@ header {
         position: absolute;
         right: 5px;
         top: 110px;
-    }
+        z-index: -1;    }
 }
+         
        
 .section2wrapper {
     width: 100%;
@@ -381,6 +388,7 @@ header {
             background-image: url("../images/background32.png");
             background-repeat: no-repeat;
             background-position: bottom;
+            min-height: 400px;
         }
 
         &--card3 {
@@ -544,6 +552,7 @@ header {
         height: 60px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
 
         &--1 {
             width: 170px;
@@ -607,6 +616,7 @@ header {
     height: 408px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     &__company {
         width: 335px;
