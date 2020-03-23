@@ -14,16 +14,17 @@ header {
 }
 
 .navwrapper {
-    width: 78%;
+    width: 100%;
     height: 110px;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
 }
 
 .nav {
-    width: 100%;
-    margin-top: 3rem; 
+    width: 78%;
+    height: auto;
+    margin-top: 3em; 
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
    
@@ -58,6 +59,7 @@ header {
 
     &__button {
         width: 19%;
+        min-width: 180px;
         height: 60px;
         border-radius: 3rem;
         align-self: flex-end;
@@ -110,9 +112,24 @@ header {
 
 @media screen and (max-width:800px) {
     .nav {
+        width: 25%;
+        margin-top: 2em;
+        height: auto;
         flex-direction: column;
-        align-items: center;
         justify-content: space-between;
+    }
+
+    .nav__logo {
+        margin-bottom: 1em;
+    }
+
+    .nav__list {
+        margin-bottom: 2em;
+    }
+
+    .nav__button {
+        margin-bottom: 5em;
+        padding: 1em 0;
     }
 }
 
@@ -122,26 +139,25 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .headline {
-    width: 1290px;
+    width: 80%;
     height: 464px;
     display: flex;
     position: relative;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
 
     &__h1 {
-        width: 645px;
-        height: 184px;
+        width: 50%;
+        height: auto;
         font-family: $font-family;
         font-style: normal;
         font-weight: bold;
-        font-size: 80px;
+        font-size: 5rem;
         line-height: 1.1;
         display: flex;
         align-items: center;
@@ -149,29 +165,32 @@ header {
     }
 
     &__content {
-        width: 380px;
-        height: 120px;
+        width: 30%;
+        height: auto;
         font-family: $font-family;
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 1.1rem;
         line-height: 1.6;
         color: #4B5D68;
     }
 
     &__button {
-        width: 170px;
+        width: 15%;
+        min-width: 110px;
         height: 60px;
         background-color: $primary-botton-color;
-        border-radius: 50px;
-        font-family: Avenir;
+        border-radius: 3rem;
+        padding: 0 1em;
+        padding-bottom: .5em;
+        font-family: $font-family;
         font-style: normal;
         font-weight: 800;
-        font-size: 18px;
+        font-size: 1.1rem;
         line-height: 1.6;
         text-align: center;
         color: #FFFFFF;
-
+        
         &:hover {
             transform: scale(1.1);
             background-color: $secondary-botton-color;
@@ -179,14 +198,20 @@ header {
     }
 
     &__image {
-        width: 885px;
-        height: 468px;
+        max-width: 70%;
+        height: auto;
         position: absolute;
         right: 5px;
         top: 110px;
     }
 }
-         
+        
+@media screen and (max-width: 1230px) {
+    .headline__h1 {
+        font-size: 3rem;
+    }
+}
+
        
 .section2wrapper {
     width: 100%;
@@ -197,8 +222,9 @@ header {
 } 
 
 .section2 {
-    width: 1117px;
+    width: 73%;
     height: 560px;
+    margin: 0 auto;
     background: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
     display: flex;
@@ -209,36 +235,36 @@ header {
     padding-right: 46px;
 
     &__h2 {
-        width: 475px;
+        width: 43%;
         height: 100px;
         font-family: $font-family;
         font-style: normal;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 2.5rem;
         line-height: 1.3;
         display: flex;
         align-items: center;
         color: #212353;
-        margin-right: 46px;
-        margin-bottom: 20px;
+        margin-right: 1em;
+        margin-bottom: .5em;
     }
 
     &__content {
-        width: 474px;
+        width: 43%;
         height: 170px;
         font-family: Avenir;
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 1.1rem;
         line-height: 1.6;
         color: #4B5D68;
-        margin-right: 46px;
-        margin-top: 20px
+        margin-right: 1.5em;
+        margin-top: 1em;
     }
 
     &__image {
-        width: 477px;
-        height: 504px;
+        width: 43%;
+        height: auto;
         position: absolute;
         left: 0px;
     }
@@ -246,14 +272,15 @@ header {
 
 .section3wrapper {
     width: 100%;
-    height: 1026px;
+    height: auto;
     display: flex;
     justify-content: center;
 }
 
 .section3 {
-    width: 1137.28px;
-    height: 1026px;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -274,7 +301,7 @@ header {
             font-family: $font-family;
             font-style: normal;
             font-weight: bold;
-            font-size: 40px;
+            font-size: 2.5rem;
             line-height: 1.3;
             display: flex;
             align-items: center;
@@ -287,7 +314,7 @@ header {
             font-family: Avenir;
             font-style: normal;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 1.1rem;
             line-height: 160%;
             text-align: center;
             color: #4B5D68;
@@ -295,16 +322,19 @@ header {
     }
 
     &__container {
-        width: 1137.28px;
-        height: 766px;
+        width: 100%;
+        max-width: 1137;
+        height: auto;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
 
         &--card {
             width: 531.29px;
             height: 358px;
-            padding-top: 30px;
+            padding-top: 1.3em;
+            margin-top: 2em;
             position: relative;
             display: flex;
             flex-direction: column;
@@ -314,7 +344,7 @@ header {
             &--content {
                 width: 276px;
                 height: 220px;
-                margin-right: 40px;
+                margin-right: 1.7em;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -326,7 +356,7 @@ header {
                     font-family: $font-family;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 24px;
+                    font-size: 1.5rem;
                     line-height: 1.3;
                     color: $primary-font-color;
                 }
@@ -337,7 +367,7 @@ header {
                     font-family: $font-family;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 16px;
+                    font-size: 1rem;
                     line-height: 1.6;
                     color: $secondary-font-color;
                 }
@@ -345,7 +375,7 @@ header {
                 &--link {
                     width: 127px;
                     height: 26px;
-                    margin-top: 20px;
+                    margin-top: 1.3em;
                     display: flex;
                     justify-content: space-between;
 
@@ -353,7 +383,7 @@ header {
                         font-family: $font-family;
                         font-style: normal;
                         font-weight: 800;
-                        font-size: 16px;
+                        font-size: 1rem;
                         line-height: 1.6;
                         letter-spacing: 0.005em;
                         color: $primary-font-color;
@@ -414,6 +444,12 @@ header {
     }
 }
 
+@media screen and (max-width: 1110px) {
+    .section3 {
+        width:90%;
+    }
+}
+
 .section4wrapper {
     width: 100%;
     height: 1009px;
@@ -423,8 +459,9 @@ header {
 }
 
 .section4 {
-    width: 1118px;
+    width: 73%;
     height: 709px;
+    margin: 0 auto;
     background: $primary-botton-color;
     border-radius: 50px;
     padding: 50px;
@@ -433,22 +470,21 @@ header {
     align-items: center;
     justify-content: space-evenly;
 
-    &__title {
-        width: 405px;       
-        height: 52px;  
+    &__title { 
         align-self: flex-start; 
-        margin-left: 43px;
+        margin-left: 1em;
         font-family: $font-family;
         font-style: normal;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 2.5rem;
         line-height: 1.3;
         color: #FFFFFF;
     }
 
     &__card {
-        width: 645px;
+        width: 60%;
         height: 330px;
+        margin: 0 auto;
         background: #FFFFFF;
         box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
         border-radius: 20px;
@@ -465,7 +501,7 @@ header {
         }
         
         &--personalinfo {
-            width: 385px;
+            width: 70%;
             height: 200px;
             display: flex;
             flex-direction: column;
@@ -475,7 +511,7 @@ header {
                 font-family: $font-family;
                 font-style: normal;
                 font-weight: 900;
-                font-size: 18px;
+                font-size: 1.1rem;
                 line-height: 1.6;
                 display: flex;
                 align-items: center;
@@ -484,10 +520,10 @@ header {
             }
 
             &--title {
-                font-family: Avenir;
+                font-family: $font-family;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 14px;
+                font-size: .9rem;
                 line-height: 1.6;
                 display: flex;
                 align-items: center;
@@ -496,18 +532,42 @@ header {
             }
 
             &--detail {
-                width: 385px;
+                width: 100%;
                 height: 130px;
                 font-family: Avenir;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 18px;
+                font-size: 1.1rem;
                 line-height: 1.8;
-                color: #4B5D68;
+                color: $secondary-font-color;
             }
         }
     }
-}           
+}    
+
+@media screen and (max-width: 1590px) {
+    .section4__title {
+        align-self: center;
+        margin: 0px;
+    }
+
+    .section4__card {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section4__card {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .section4__card--personalinfo {
+        width: 95%;
+
+    }
+}
+
 
 .divider {
     width: 100%;
@@ -525,7 +585,7 @@ header {
 }
 
 .section5 {
-    width: 1117px;
+    width: 73%;
     height: 101px;
     display: flex;
     justify-content: space-between;
@@ -541,7 +601,7 @@ header {
             font-family: $font-family;
             font-style: normal;
             font-weight: bold;
-            font-size: 40px;
+            font-size: 2.5rem;
             line-height: 1.3;
             color: $primary-font-color;
         }
@@ -550,7 +610,7 @@ header {
             font-family: $font-family;
             font-style: normal;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 1.1rem;
             line-height: 1.6;
             color: $secondary-font-color;
         }
@@ -571,7 +631,7 @@ header {
             font-family: $font-family;
             font-style: normal;
             font-weight: 900;
-            font-size: 18px;
+            font-size: 1.1rem;
             line-height: 1.6;
             text-align: center;
             color: #FFFFFF;
@@ -600,7 +660,7 @@ header {
                 font-family: $font-family;
                 font-style: normal;
                 font-weight: 900;
-                font-size: 16px;
+                font-size: 1rem;
                 line-height: 1.6;
                 letter-spacing: 0.005em;
                 color: $primary-font-color;
@@ -621,7 +681,7 @@ header {
 }
 
 .footer {
-    width: 1117px;
+    width: 73%;
     height: 408px;
     display: flex;
     justify-content: space-between;
@@ -652,7 +712,7 @@ header {
                 font-family: $font-family;
                 font-style: normal;
                 font-weight: 900;
-                font-size: 20px;
+                font-size: 1.3rem;
                 line-height: 1.6;
                 color: $primary-font-color;
             }
@@ -665,7 +725,7 @@ header {
             font-family: $font-family;
             font-style: normal;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 1.8;
             letter-spacing: 0.01em;
             color: $primary-font-color;
@@ -678,7 +738,7 @@ header {
             font-family: $font-family;
             font-style: normal;
             font-weight: normal;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 1.8;
             letter-spacing: 0.01em;
             color: $primary-font-color;
@@ -690,7 +750,7 @@ header {
             font-family: $font-family;
             font-style: normal;
             font-weight: normal;
-            font-size: 12px;
+            font-size: .8rem;
             line-height: 1.8;
             letter-spacing: 0.01em;
             color: $primary-font-color;
@@ -764,21 +824,3 @@ header {
         }
     }
 }
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-    
-
-        
